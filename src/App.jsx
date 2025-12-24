@@ -76,8 +76,7 @@ export default function App() {
                   y: [100, -150, 200, -100, 150, -200, 0],
                   scale: [1, 1.2, 0.9, 1.1, 1]
                 }}
-                transition={{ duration: 0.80, repeat: Infinity, ease: "circInOut" }} // Velocità raddoppiata 
-                className="absolute p-5 bg-blue-700 rounded-3xl shadow-[0_0_25px_#2563eb] cursor-none"
+                transition={{ duration: 1.0, repeat: Infinity, ease: "circInOut" }} // Velocità raddoppiata                 className="absolute p-5 bg-blue-700 rounded-3xl shadow-[0_0_25px_#2563eb] cursor-none"
                 style={{ top: '45%', left: '50%' }}
               >
                 <Trophy className="text-yellow-400" size={60} />
