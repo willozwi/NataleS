@@ -41,13 +41,16 @@ export default function App() {
       )}
 
       <AnimatePresence mode="wait">
-        {/* START SCREEN */}
+        {/* START SCREEN AGGIORNATA */}
         {level === 0 && (
           <motion.div key="start" initial={{ scale: 0.8 }} animate={{ scale: 1 }} className="text-center z-10">
-            <h1 className="text-5xl font-black mb-4 text-red-500 drop-shadow-md">XMAS CHALLENGE 🎄</h1>
-            <p className="text-xl mb-8 text-blue-300">Sei pronto, Campione? Forza Inter! 🔵⚫</p>
+            <h1 className="text-5xl font-black mb-4 text-red-500 drop-shadow-md">BUON NATALE! 🎅</h1>
+            <p className="text-2xl mb-8 text-white font-bold bg-black/30 p-4 rounded-2xl">
+              Supera tutti i livelli per avere il tuo regalo! 🎁<br/>
+              <span className="text-blue-400 text-lg">Forza Inter! 🔵⚫</span>
+            </p>
             <button onClick={nextLevel} className="bg-red-600 hover:bg-red-700 px-12 py-4 rounded-full text-2xl font-bold shadow-xl transform hover:scale-110 transition">
-              GIOCA ORA!
+              INIZIA LA SFIDA!
             </button>
           </motion.div>
         )}
@@ -115,9 +118,9 @@ export default function App() {
         {/* WIN SCREEN */}
         {level === 4 && (
           <motion.div key="win" initial={{ scale: 0 }} animate={{ scale: 1 }} className="text-center z-10">
-            <div className="text-8xl mb-4">🏆</div>
-            <h2 className="text-5xl font-black text-yellow-500 mb-2">CAMPIONE!</h2>
-            <p className="text-2xl text-white mb-8">Buon Natale e Forza Inter! 🔵⚫</p>
+            <div className="text-8xl mb-4">🎁</div>
+            <h2 className="text-5xl font-black text-yellow-500 mb-2">CE L'HAI FATTA!</h2>
+            <p className="text-2xl text-white mb-8">Corri a prendere il tuo regalo! 🎄✨</p>
             <button onClick={() => setLevel(0)} className="bg-green-600 px-8 py-3 rounded-full flex items-center gap-2 mx-auto font-bold text-lg shadow-lg">
               <RotateCcw size={20} /> RIGIOCA
             </button>
